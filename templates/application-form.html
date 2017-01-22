@@ -21,13 +21,13 @@
         <br><br>
 
         <label for="salary">Minimum Salary Requirement: $</label>
-        <input type="text" name="salary" id="salary">
+        <input type="text" name="salary" id="salary" required>
         <br><br>
 
         <fieldset>
             <legend>Which job are you applying for?:</legend>
             {% for job in jobs %}
-            <input id="{{ job }}" type="radio" name="job" value={{ job }}>
+            <input id="{{ job }}" type="radio" name="job" value="{{ job }}">
             <label for="{{ job }}">{{ job }}</label>
             <br>
             {% endfor %}
